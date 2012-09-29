@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div id="prompt">
+	<h1 id="greet">Hey, what's up?</h1>
+	<h2 id="instruction">We couldn't find anything to show you, not even a single datum.<br/>Maybe if you tell us something new, we'll find something to tell you!</h2>
+	<form action="/" method="post" name="something_new">
+		<input type="text" name="item" id="item" placeholder="Put your new data here">
+		<button type="submit" id="item-button">Tell us!</button>
+	</form>
+</div>
+
+{% endblock %}
