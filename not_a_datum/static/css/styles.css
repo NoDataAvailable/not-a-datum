@@ -8,17 +8,18 @@
 }
 #instruction {
 	position: relative;
-	left: 5%;
 }
 #item {
-	position: relative;
 	left: 10%;
+	border: 1px solid #DDD;
 	border-radius: 5px;
 	height: 40px;
-	width: 70%;
+	width: 100%;
+	padding: 15px;
 }
-#item-button {
-	width: 5%;
+#home-button {
+	width: 10%;
+	border: none;
 	border-radius: 5px;
-	height: 40px;
+	height: 25px;
 }

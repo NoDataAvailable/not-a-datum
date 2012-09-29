@@ -16,6 +16,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 
     url(r'^$', 'not_a_datum.views.home'),  
-    url(r'^hello/$', 'not_a_datum.views.hello'),   
+    url(r'^hello/$', 'not_a_datum.views.hello'),  
+    url(r'^submit/$', 'not_a_datum.views.submit'),  
 )
 

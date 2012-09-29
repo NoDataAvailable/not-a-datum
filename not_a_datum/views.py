@@ -8,8 +8,14 @@ from django.template.loader import get_template
 
 def home(request):
     context = {}
-#    return HttpResponse("<h1>No Data To Be Found!</h1> None at all")
+    context['info'] = "banana"
     return render_to_response('home.html', context, RequestContext(request))
+
+def submit(request):
+    if request.POST:
+        return HttpResponse("We got " + request.POST['item'])
+    else:
+        return HttpResponse("Nope :(")
 
 def hello(request):
     return HttpResponse("Hello world")
